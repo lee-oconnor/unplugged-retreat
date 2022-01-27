@@ -521,23 +521,62 @@ footer .social h4 {
     text-align: center;
   } 
 
-/*-------------ABOUT PAGE------------------*/
+/*-------------------------------ABOUT PAGE---------------------------------*/
+  .content-wrapper {
+    width: 100%;
+  }
 
- .mission {
-   width: 100%;
+/*--------------About-Mission Section----------------*/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+  }
+
+ .mission-content h1 {
+    width: 100%;
+  }
+
+ .mission-content p {
+   width: 45%;
    
  }
 
-  .mission-content p {
+
+  /*-----------------About-Contact Section----------------*/
+  .contact-section .content-wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-basis: auto;
-    width: 50%;
-
-
+    align-items: center;
+    flex-flow: row wrap;
   }
- /*----------------FAQ PAGE-----------------*/
 
+  .contact-section .content-wrapper h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .contact-content {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+
+
+
+  
+
+ /*---------------------------------------FAQ PAGE-----------------------------*/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  
  .faq-content {
     display: flex;
     justify-content: center;
