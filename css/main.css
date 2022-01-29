@@ -87,7 +87,89 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* General Styles */
+ 
+html {
+	font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ 
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
+ 
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 
+}
+ 
+h1 {
+  font-size: 1.875em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.25em;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  line-height: 1em;
+  font-weight: normal;
+  
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  font-weight: normal;
+ 
+}
+ 
+.contact-section .content-wrapper h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  line-height: 1.25em;
+  font-weight: normal;
+}
+
+ p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+}
+
+.lacrue h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: normal;
+}
+
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+ 
+}
+ 
+.content-wrapper {
+ 
+}
 /*-----------------Base Header - Footer Styles------------*/
 
 .content-wrapper {
@@ -305,8 +387,13 @@ aside {
     margin-bottom: 50px;
   }
 
-
-
+  .contact-faq {
+   text-align: center;
+  
+  }
+  .contact-faq h4 {
+    margin-bottom: 15px;
+  }
 
 
 
@@ -670,10 +757,6 @@ aside {
       margin-bottom: 30px;
       width: 100%;
     }
-
-
-
-
 
 }
 /* ==========================================================================
