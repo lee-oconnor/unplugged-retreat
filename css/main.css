@@ -167,7 +167,7 @@ h4 {
 }
 
 img {
- 
+ width: 100%; 
 }
  
 figure {
@@ -311,8 +311,14 @@ footer .copyright p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../Assets/jake-melara-30679-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 } 
+
+
 
 aside {
   display: flex;
