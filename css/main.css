@@ -90,7 +90,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General Styles */
+/* Global Styles */
  
 html {
 	font-size: 16px;
@@ -98,19 +98,22 @@ html {
  
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #e2e3ed;
   font-size: 1em;
+  text-align: left;
 }
  
 ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.125em;
+  list-style-type: none;
  
 }
  
 a {
   color: #e2e3ed;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 
 }
  
@@ -171,16 +174,13 @@ img {
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address p {
  font-style: normal;
 }
- 
-.content-wrapper {
- 
-}
+
 
 aside .form {
   margin-top: 30px;
@@ -232,8 +232,6 @@ header {
 }
 
 header .content-wrapper {
-
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -245,15 +243,19 @@ header .content-wrapper {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 2 20px 0;
+  margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 header nav {
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -269,6 +271,10 @@ header nav ul {
 footer {
   background-color: #202322;
   flex-direction: column;
+}
+
+footer .footer-content {
+  align-items: flex-start;
 }
 
 footer p {
@@ -306,6 +312,13 @@ footer .copyright p {
 }
 /*----------------Mobile Styles - Homepage--------------*/
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 .hero-area {
   display: flex;
@@ -315,9 +328,21 @@ footer .copyright p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
+  min-height: 500px;
 } 
 
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  align-items: flex-start;
+  margin: 0;
+  font-size: 2.25em;
+}
 
 
 aside {
@@ -333,7 +358,11 @@ aside .content-wrapper {
 }
 
 .features {
-  
+  background: url(../Assets/rawpixel-800820-unsplash1.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .features .content-wrapper {
@@ -341,12 +370,11 @@ aside .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
   width: 100%;
-  background: url(../Assets/rawpixel-800820-unsplash1.jpg);
-  background-size: cover;
+  margin: 0;
 }
 
 .features .content-wrapper h1 {
-
+  margin-top: 50px;
   width: 90%;
 }
 
@@ -387,7 +415,7 @@ aside .content-wrapper {
 }
 
 .reviews h3 {
-  width: 55%;
+  width: 100%;
   padding: 20px 0;
 }
 
@@ -395,6 +423,10 @@ aside .content-wrapper {
   padding: 30px 0;
 }
 
+.reviews figure {
+  width: 100%;
+  margin: 0;
+}
 
 /* =================================================================
    ABOUT Page
@@ -565,6 +597,13 @@ aside .content-wrapper {
      padding: 33px 0;
    }
 
+   header figure {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
 
   header .content-wrapper {
     width: 100%;
@@ -589,7 +628,13 @@ aside .content-wrapper {
 
   .hero-area .content-wrapper {
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 300px;
     
+  }
+
+  .hero-area h1 {
+    margin-bottom: 200px;
   }
 /*------------ASIDE/FORM AREA--------------*/
 
@@ -608,8 +653,9 @@ aside .content-wrapper {
   }
 
 /*-----------FEATURES-------------------------*/
-  .features  {
-    margin-left: 60px;
+  
+  .features .content-wrapper h1 {
+    font-size: 2.25em;
   }
 
   .features article {
@@ -628,18 +674,50 @@ aside .content-wrapper {
 
   .reviews .content-wrapper {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
   }
-
+  
   .reviews article {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .reviews .content-wrapper figure {
+    width: 52%;
+    margin: 0;
+  
+  }
+
+  .reviews h1 {
+    font-size: 2.25em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews h3 {
+    font-size: 1.5em;
+  }
+ 
+  .reviews .lacrue {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap; 
+    margin: 0;
+    padding: 0;
+    width: 46%;
     
 
   }
 
-  .reviews article div {
-   width: 49%;
+  .lacrue h3 {
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -649,12 +727,14 @@ aside .content-wrapper {
     width: 65%;
     margin: 100px 0;
   }
-
+  .contact .social h4 {
+    font-size: 1.5em;
+  }
 
  .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
 
@@ -715,7 +795,8 @@ aside .content-wrapper {
     justify-content:space-between;
     align-items:center;
     width: 100%;
-}
+  }
+
 
 
 /* ==========================================================================
@@ -750,10 +831,16 @@ aside .content-wrapper {
     max-width: 960px;
     margin: 100px 0;
   }
+/*----------------Header----------------------*/
 
-  .features .features-item-description {
-    width: 33%;
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
+ 
   /*-------------Hero Styles-----------------*/
 
   .hero-area h1 {
@@ -771,6 +858,10 @@ aside .content-wrapper {
   }
   
 /*---------------Features Styles------------*/
+
+.features .features-item-description {
+  width: 33%;
+  }
 
   .features .content-wrapper h1 {
     width: 80%;
@@ -793,31 +884,31 @@ aside .content-wrapper {
 /* ==========================================================================
   About Page
   ========================================================================== */
-    .content-wrapper {
-      width: 100%;
-      margin: 100px 0;
-    }
+  .content-wrapper {
+    width: 100%;
+    margin: 100px 0;
+  }
 
-    header nav {
-      width: 20%; 
-    }
+  header nav {
+    width: 20%; 
+  }
 
-    header nav ul {
-      width: 100%;
-    }
+  header nav ul {
+    width: 100%;
+  }
 
-    .mission h2, .contact-section 
-    .content-wrapper h2 {
-      width: 100%;
-    }
+  .mission h2, .contact-section 
+  .content-wrapper h2 {
+    width: 100%;
+  }
 
 /* ==========================================================================
   FAQ Page
   ========================================================================== */
-    .faq h1 {
-      margin-bottom: 30px;
-      width: 100%;
-    }
+  .faq h1 {
+    margin-bottom: 30px;
+    width: 100%;
+  }
 
 }
 /* ==========================================================================
