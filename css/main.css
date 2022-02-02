@@ -365,6 +365,10 @@ aside .content-wrapper {
   flex-flow: row wrap;
 }
 
+.features .features-item-description {
+  width: 100%;
+}
+
 .features .content-wrapper {
   display: flex;
   justify-content: center;
@@ -387,8 +391,14 @@ aside .content-wrapper {
   margin: 30px 0;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 
@@ -880,10 +890,23 @@ aside .content-wrapper {
 
   .hero-area h1 {
     width: 100%;
+    font-size: 3.75em;
   }
   /*-------------Aside Styles----------------*/
 
+  .content-wrapper 
+  .form h3 {
+    font-size: 1.875em;
+  }
+  .content-wrapper h3 {
+    font-size: 1.875em;
+  }
 
+
+ aside p {
+   font-size: 1.125em;
+ }
+  
   aside .content-wrapper {
     justify-content: space-around;
   }
@@ -895,7 +918,7 @@ aside .content-wrapper {
 /*---------------Features Styles------------*/
 
 .features .features-item-description {
-  width: 33%;
+  width: 50%;
   }
 
   .features .content-wrapper h1 {
@@ -906,12 +929,34 @@ aside .content-wrapper {
   .features article {
     flex-basis: 32%;
     justify-content: flex-start;
+    margin-top: 0px;
+  }
+/*------------------REVIEWS-------------------*/
+  .reviews h1 {
+    padding-bottom: 50px;
+  }
+
+  .reviews p {
+    font-size: 1.125em;
+  }
+
+  .reviews .content-wrapper {
+    justify-content: space-between;
   }
 
   .reviews article div {
     width: 50%;
   }
+/*--------------------FOOTER--------------------*/
 
+  footer h4 {
+    font-size: 1.875em;
+  }
+
+  footer p {
+    font-size: 1.125em;
+  }
+  
   .footer-content {
     align-items: flex-start;
   }
