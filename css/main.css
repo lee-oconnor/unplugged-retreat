@@ -791,6 +791,22 @@ aside .content-wrapper {
    
  }
 
+  .map figure {
+  width: 100%;
+  height: 0; 
+  padding-bottom: 50%; 
+  overflow: hidden;
+  position: relative;
+  }
+
+  .map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  }
+
 
   /*-----------------About-Contact Section----------------*/
   .contact-section .content-wrapper {
@@ -799,6 +815,7 @@ aside .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin-top: 75px;
   }
 
   .contact-section .content-wrapper h2 {
@@ -809,11 +826,13 @@ aside .content-wrapper {
   .contact-content {
     display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items:flex-start;
     width: 100%;
   }
 
-
+.col-1, .col-2 h3 {
+  font-style: normal;
+}
 
 /* ==========================================================================
   FAQ Page
