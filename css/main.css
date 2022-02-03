@@ -438,6 +438,21 @@ aside .content-wrapper {
   margin: 0;
 }
 
+.social-icons i {
+  font-size: 2em; 
+  background-color: #55715b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  
+  
+}
+
 /* =================================================================
    ABOUT Page
    =================================================================*/
@@ -956,7 +971,7 @@ aside .content-wrapper {
   footer p {
     font-size: 1.125em;
   }
-  
+
   .footer-content {
     align-items: flex-start;
   }
