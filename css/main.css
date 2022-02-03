@@ -264,6 +264,7 @@ header nav ul {
   width: 100%;
   list-style-type: none;
   padding-left: 0;
+  font-size: 1.125em;
 
 }
 
@@ -458,10 +459,6 @@ ABOUT Page
 =================================================================*/
 
 
-ul {
-  font-size: 1em;
-}
-
 
 .mission {
   background-color: #527158;
@@ -512,21 +509,25 @@ ul {
    FAQ Page
    =================================================================*/
 
-.faq {
+  .faq {
   background-color: #527158;
   display: flex;
   justify-content:center;
   align-items: center;
   flex-flow: row wrap;
   }
-
-
+  
+  
   .faq .content-wrapper {
     margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  .faq .content-wrapper h1 {
+    margin-top: 0;
   }
 
   .faq h2 {
@@ -676,6 +677,10 @@ ul {
     justify-content: space-between;
     
   }
+  
+  header nav ul {
+    font-size: 1em;
+  }
 
   .header-divider {
     display: none;
@@ -801,6 +806,13 @@ ul {
     text-align: center;
   }
 
+  .social-icons i {
+    font-size: 1em;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
 
   footer .copyright {
     width: 100%;
@@ -811,7 +823,9 @@ ul {
   About Page
   ========================================================================== */
   
-
+  nav ul {
+    font-size: 1em;
+  }
 /*--------------About-Mission Section----------------*/
 
   .mission-content {
@@ -888,6 +902,9 @@ ul {
   FAQ Page
   ========================================================================== */
   
+  nav ul {
+    font-size: 1em;
+  }
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -903,6 +920,12 @@ ul {
     .faq-content {
       flex-basis: 41%; 
     
+    }
+    .social-icons i {
+      font-size: 1em;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
     }
 
 
@@ -924,6 +947,10 @@ ul {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  header nav ul {
+    font-size: 1.125em;
   }
  
   /*-------------Hero Styles-----------------*/
@@ -1041,22 +1068,27 @@ ul {
     font-size: 1.125em;
   }
 
-  .social-icons i {
-    font-size: 1.5em;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+ 
 
 
 /* ==========================================================================
   FAQ Page
   ========================================================================== */
+  
+  
   .faq h1 {
     margin-bottom: 30px;
     width: 100%;
   }
+  .social-icons i {
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
 
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
